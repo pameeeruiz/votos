@@ -136,8 +136,6 @@ namespace votos
         public int totalVotosDemocratas()
         {
             return Democratas.Sum(x => x.Value);
-
-
         }
 
 

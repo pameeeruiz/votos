@@ -111,7 +111,7 @@ namespace votos
                 string estado = dgvRepublicanos.CurrentRow.Cells[0].Value?.ToString();
                 int puntos = 0;
 
-                // Validar que el valor se pueda convertir a entero
+                
                 if (!int.TryParse(dgvRepublicanos.CurrentRow.Cells[1].Value?.ToString(), out puntos))
                 {
                     MessageBox.Show("Error: el valor de puntos no es válido.");
