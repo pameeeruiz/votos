@@ -95,7 +95,13 @@ namespace votos
         {
             try
             {
-                return Republicanos.Remove(estado);
+                if (Republicanos.ContainsKey(estado))
+                {
+                    Republicanos.Remove(estado);
+                    estadosiniciales.Add(estado, votos); 
+                    return true;
+                }
+                return false;
             }
             catch (Exception ex)
             {
@@ -108,7 +114,13 @@ namespace votos
         {
             try
             {
-                return Democratas.Remove(estado);
+                if (Democratas.ContainsKey(estado))
+                {
+                    Democratas.Remove(estado);
+                    estadosiniciales.Add(estado, votos); 
+                    return true;
+                }
+                return false;
             }
             catch (Exception ex)
             {
