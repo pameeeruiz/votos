@@ -39,6 +39,8 @@
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRepublicanos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDemocratas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -75,7 +77,7 @@
             // 
             // btnAgregarR
             // 
-            this.btnAgregarR.Location = new System.Drawing.Point(36, 464);
+            this.btnAgregarR.Location = new System.Drawing.Point(46, 445);
             this.btnAgregarR.Name = "btnAgregarR";
             this.btnAgregarR.Size = new System.Drawing.Size(107, 34);
             this.btnAgregarR.TabIndex = 5;
@@ -85,7 +87,7 @@
             // 
             // btnAgregard
             // 
-            this.btnAgregard.Location = new System.Drawing.Point(613, 464);
+            this.btnAgregard.Location = new System.Drawing.Point(598, 445);
             this.btnAgregard.Name = "btnAgregard";
             this.btnAgregard.Size = new System.Drawing.Size(107, 34);
             this.btnAgregard.TabIndex = 6;
@@ -95,7 +97,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(194, 464);
+            this.btnEliminar.Location = new System.Drawing.Point(184, 445);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(107, 34);
             this.btnEliminar.TabIndex = 7;
@@ -105,7 +107,7 @@
             // 
             // btnEliminard
             // 
-            this.btnEliminard.Location = new System.Drawing.Point(450, 464);
+            this.btnEliminard.Location = new System.Drawing.Point(479, 445);
             this.btnEliminard.Name = "btnEliminard";
             this.btnEliminard.Size = new System.Drawing.Size(107, 34);
             this.btnEliminard.TabIndex = 8;
@@ -125,7 +127,7 @@
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new System.Drawing.Point(319, 398);
+            this.btnReiniciar.Location = new System.Drawing.Point(319, 421);
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(107, 41);
             this.btnReiniciar.TabIndex = 10;
@@ -136,7 +138,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::votos.Properties.Resources.hillary;
-            this.pictureBox2.Location = new System.Drawing.Point(479, 41);
+            this.pictureBox2.Location = new System.Drawing.Point(463, 68);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 159);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,18 +148,38 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::votos.Properties.Resources.dn;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(65, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(226, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(126, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Republicanos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(519, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Democratas";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 564);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReiniciar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnEliminard);
@@ -177,6 +199,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -193,6 +216,8 @@
         private System.Windows.Forms.Button btnEliminard;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnReiniciar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
