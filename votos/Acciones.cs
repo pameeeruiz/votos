@@ -57,9 +57,9 @@ namespace votos
 
                 return false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                System.Diagnostics.Debug.WriteLine($"Error en agregarRepublicanos: {ex}");
+                
                 return false;
             }
         }
@@ -82,9 +82,9 @@ namespace votos
 
                 return false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                System.Diagnostics.Debug.WriteLine($"Error en agregarDemocratas : {ex}");
+               
                 return false;
             }
         }
@@ -103,9 +103,9 @@ namespace votos
                 }
                 return false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                System.Diagnostics.Debug.WriteLine($"Error en eliminarRepublicanos: {ex}");
+               
                 return false;
             }
         }
@@ -122,9 +122,9 @@ namespace votos
                 }
                 return false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                System.Diagnostics.Debug.WriteLine($"Error en eliminarDemocratas: {ex}");
+                
                 return false;
             }
         }
